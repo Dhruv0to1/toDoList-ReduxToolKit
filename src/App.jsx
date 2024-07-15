@@ -8,8 +8,12 @@ function App() {
   return (
     <>
       <Provider store={store}>
-        <ToDoInput />
-        <ToDos />
+        <section className="min-h-full flex justify-center">
+          <div className="bg-slate-400 w-[88%] my-4 rounded-lg">
+            <ToDoInput />
+            <ToDos />
+          </div>
+        </section>
       </Provider>
     </>
   );
